@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import { GlobalStyle } from './style.js';
+import { Menu } from 'antd';
+import routes from './routes';
+import { renderRoutes } from 'react-router-config';
+import { HashRouter, NavLink } from 'react-router-dom';
+import './app.css';
 
 function App() {
+  const [current, setCurrent] = useState('mail')
+
+  console.log(current)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <GlobalStyle />
+      <Menu mode="horizontal" onClick={(e) => setCurrent(e.key) } selectedKeys={[current]}>
+        <Menu.Item key="mail">
+          <NavLink to="/dark-mode">黑暗模式</NavLink>
+        </Menu.Item>
+        <Menu.Item key="app">
+          <NavLink to="/normal-mode">正常模式</NavLink>
+        </Menu.Item>
+      </Menu> 
+      { renderRoutes(routes) }
+    </HashRouter>
   );
 }
 
