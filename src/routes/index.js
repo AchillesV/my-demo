@@ -1,5 +1,7 @@
 import DarkMode from '../demos/DarkMode';
 import NormalMode from '../demos/NormalMode';
+import DealAnsi from '../demos/DealAnsi';
+import EditTable from '../demos/EditTable';
 
 
 export default [
@@ -10,5 +12,13 @@ export default [
   {
     path: '/normal-mode',
     component: NormalMode
-  }
+  },
+  {
+    path: '/deal-ansi',
+    component: DealAnsi
+  },
+  {
+    path: '/edit-table',
+    component: EditTable
+  },
 ]

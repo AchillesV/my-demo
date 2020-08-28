@@ -1,0 +1,26 @@
+.bg {
+  background-color: black;
+  padding: 10px;
+  color: white;
+}
+
+.ansi-red-intense-fg {
+  color: red;
+}
+.ansi-green-intense-fg {
+  color: green;
+}
+
+.ansi-yellow-intense-fg {
+  color: yellow;
+}
+
+.ansi-cyan-fg {
+  color: cyan;
+}
+
+
+
+.ansi-bold {
+  font-weight: 500;
+}

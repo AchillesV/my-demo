@@ -20,6 +20,12 @@ function App() {
         <Menu.Item key="app">
           <NavLink to="/normal-mode">正常模式</NavLink>
         </Menu.Item>
+        <Menu.Item key="ansi">
+          <NavLink to="/deal-ansi">ANSI</NavLink>
+        </Menu.Item>
+        <Menu.Item key="table">
+          <NavLink to="/edit-table">可编辑单元格</NavLink>
+        </Menu.Item>
       </Menu> 
       { renderRoutes(routes) }
     </HashRouter>
