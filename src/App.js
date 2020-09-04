@@ -26,6 +26,9 @@ function App() {
         <Menu.Item key="table">
           <NavLink to="/edit-table">可编辑单元格</NavLink>
         </Menu.Item>
+        <Menu.Item key="3d">
+          <NavLink to="/threed-view">3d模型</NavLink>
+        </Menu.Item>
       </Menu> 
       { renderRoutes(routes) }
     </HashRouter>

@@ -2,6 +2,7 @@ import DarkMode from '../demos/DarkMode';
 import NormalMode from '../demos/NormalMode';
 import DealAnsi from '../demos/DealAnsi';
 import EditTable from '../demos/EditTable';
+import ThreeView from '../demos/ThreeView';
 
 
 export default [
@@ -20,5 +21,9 @@ export default [
   {
     path: '/edit-table',
     component: EditTable
+  },
+  {
+    path: '/threed-view',
+    component: ThreeView
   },
 ]
