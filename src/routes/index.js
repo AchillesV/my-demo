@@ -3,6 +3,7 @@ import NormalMode from '../demos/NormalMode';
 import DealAnsi from '../demos/DealAnsi';
 import EditTable from '../demos/EditTable';
 import ThreeView from '../demos/ThreeView';
+import HocComponent from '../demos/HocComponent';
 
 
 export default [
@@ -25,5 +26,9 @@ export default [
   {
     path: '/threed-view',
     component: ThreeView
+  },
+  {
+    path: '/hoc-component',
+    component: HocComponent
   },
 ]

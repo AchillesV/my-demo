@@ -29,8 +29,13 @@ function App() {
         <Menu.Item key="3d">
           <NavLink to="/threed-view">3d模型</NavLink>
         </Menu.Item>
-      </Menu> 
+        <Menu.Item key="hoc">
+          <NavLink to="/hoc-component">高阶组件</NavLink>
+        </Menu.Item>
+      </Menu>
+      <div style={{ marginTop: 30, height: 100 }}> 
       { renderRoutes(routes) }
+      </div>
     </HashRouter>
   );
 }
